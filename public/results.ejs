@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Watts Cool Spots</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var watts = {lat: 33.9550, lng: 241.7509};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: watts
+        });
+        var marker = new google.maps.Marker({
+          position: watts,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg6-JWSfWsCM9fJkoXZ0_icCo7RtpEEP8&callback=initMap">
+    </script>
+  </body>
+</html>

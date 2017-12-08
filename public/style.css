@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    
+}
+
+body{
+    background: red;
+    border:3px solid white;
+}
+
+#submitbutton {
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+}
